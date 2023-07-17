@@ -15,9 +15,14 @@ class Car{
 
 class Driver{
 	
-	public Car bmw; 
+	public Car bmw;
 	
 	// let's use a Constructor to initialize this Variable
+	
+	public Driver(){
+		bmw = new Car();
+    }
+	
 	
 	public void getGoing(){
 		bmw.startCar();
